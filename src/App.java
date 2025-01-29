@@ -27,6 +27,18 @@ public class App {
         emCon.addEmpleado(new Empleado(1, "Pablo", "senior"));
         emCon.addEmpleado(new Empleado(2, "Juan", "senior"));
         emCon.addEmpleado(new Empleado(3, "Andres", "senior"));
+
+        System.out.println("Lista de empleados");
+        emCon.displayEmpleados();
+
+        System.out.println("Solo Nombre:");
+        emCon.displayEmpleadoNombre();
+
+        System.out.println("Solo Llaves:");
+        emCon.displayEmpleadoKey();
+
+        System.out.println("Solo Empleados");
+        emCon.displayEmpleados();
     }
 
     private static void runMapExamlpe() {

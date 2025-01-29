@@ -33,8 +33,25 @@ public class EmpleadoContoller {
     }
 
     public void displayEmpleadoNombre(){
-        for(Map.Entry<Integer, Empleado> empleadoEntry : empleados.entrySet()){
-            System.out.println(empleadoEntry.getKey() + " " + empleadoEntry.getValue());
+        for(Empleado empleado : empleados.values()){
+            System.out.println(empleado.getName());
         }
     }
+
+    public void displayEmpleadoKey(){
+        for(Integer key : empleados.keySet()){
+            System.out.println(key);
+        }
+    }
+
+    //Solo empelados sin entrySet
+    public void displayEmpleados(){
+        for(Empleado empleado : empleados.values()){
+            System.out.println(empleado);
+        }
+    }
+
+
+
+
 }
